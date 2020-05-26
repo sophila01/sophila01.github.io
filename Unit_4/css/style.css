@@ -15,21 +15,21 @@ h1 {
 	color: #D4AF37;
 }
 nav {
-	color: #999;
 	text-align: right;
 	font-family: "oswald", helvetica, sans-serif;
 	text-decoration: none;
 }
 #navlinks {
-	padding: 1.5em;
-	background-color: #FFF;
+	padding: .5em;
+	color: #FFF;
+	font-size: 1.5em;
 	text-decoration: none;
 }
 #cta {
-	padding: 1.5em;
+	padding: 1em;
 	font-family: "oswald", helvetica, sans-serif;
-	font-size: 1.5em;
-	border: #D4AF37;
+	font-size: 2em;
+	background-color: #D4AF37;
 }
 header {
 	background-color: #000;
