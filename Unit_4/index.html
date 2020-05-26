@@ -7,21 +7,21 @@
 <body>
 	<header>
 		<h1>Quarantine: A Musical</h1>
-		<h2><a href="#">book tickets</a></h2>	
+		<a href="#" id="cta">book tickets</a>	
 		<nav>
-			<a href="#music">the music</a>
-			<a href="#show">the show</a>
-			<a href="#cast">cast/creative</a>
-			<a href="#tickets">ticket info</a>
-			<a href="#contact">contact</a>
+			<a href="#music" id="navlinks">the music</a>
+			<a href="#show" id="navlinks">the show</a>
+			<a href="#cast" id="navlinks">cast/creative</a>
+			<a href="#tickets" id="navlinks">ticket info</a>
+			<a href="#contact" id="navlinks">contact</a>
 		</nav>
 	</header>
 	<section>
 		<img id="hero" src="images/quarantina.jpg" alt="Title image of Quarantina the Tina Turner Musical" title="Quarantina the musical">
 		<h2>Touring Australia some day never. Opening at the Wonderclean Theatre, Sydney in 2021.</h2>
 	</section>
-	<section>
-		<h2 class="sectionhead" id="music">ABOUT THE MUSIC</h2>		
+	<section id="music">
+		<h2 class="sectionhead">ABOUT THE MUSIC</h2>		
 		<p class="headline">Featuring songs you know and love, remastered for today's crazy times.</p>
 		<div>
 			<img src="images/acoronavirusline.jpg" alt="title image of A Coronavirus Line The Musical" title="A Coronavirus Line The Musical">
@@ -34,8 +34,8 @@
 			<img src="images/nocompany.jpg" alt="title image of No Company The Musical" title="No Company The Musical">
 		</div>
 	</section>
-	<section>
-		<h2 class="sectionhead" id="show" >ABOUT THE SHOW</h2>		
+	<section id="show">
+		<h2 class="sectionhead">ABOUT THE SHOW</h2>		
 		<p class="headline"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 		<div>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/0kIhBgQAw3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
@@ -45,8 +45,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
 		</div>
 	</section>
-	<section>
-		<h2 class="sectionhead" id="cast">CAST | CREATIVE</h2>
+	<section id="cast">
+		<h2 class="sectionhead">CAST | CREATIVE</h2>
 			
 		<div>	
 				<img src="images/beyonce.jpg" alt="Headshot image of Beyonce" title="Beyonce - Quarantina"> 
@@ -89,8 +89,8 @@
 				<p><span class="star">Kristen Wiig</span> - Jacinda Ardern</p>
 		</div>
 	</section>
-	<section>
-		<h2 class="sectionhead" id="tickets">TICKETS | INFO</h2>		
+	<section id="tickets">
+		<h2 class="sectionhead">TICKETS | INFO</h2>		
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 		<div>
 			<img src="images/ticketmaster.jpg" alt="Ticketmaster logo" title="Ticketmaster logo">
@@ -101,7 +101,7 @@
 		</aside>
 		<h3>WONDERCLEAN THEATRE</h3>
 		<address>Self-distance Ave, Sydney 2000</address>
-		<p>Tel: +61 XXX XXX XXX </p>
+		<p>Tel: +61 XXX XXX XXX</p>
 		<p>@: <a href="mailto:email@theatre.com">email@theatre.com</a></p>
 	</section>
 	<hr>
@@ -115,13 +115,14 @@
 			<p>Sign up to receive more information if we ever pull this off!</p>
 			<form>
 				<label for="fname">First name:</label>
-  				<input type="text" id="fname" name="fname" value="Name"><br>
+  				<input type="text" id="fname" name="fname" value="Name">
   				<label for="email">Email:</label>
   				<input type="text" id="email" name="email" value="email@emailaddress">
+  				<input type="submit" name="send">
 			</form>
-		 </div>
-		<p><a href="#">Contact</a></p>
-		<p><a href="#">Privacy Policy</a></p>
+		</div>
+		<a href="#">Contact</a>
+		<a href="#">Privacy Policy</a>
 		<p>Show images courtesy of Jeremy West</p>
 	</footer> 
 </body>
