@@ -74,6 +74,10 @@ nav a:hover {
 	background-color: E89C6C;
 }*/
 
+.headline {
+	padding-bottom: 1em;
+}
+
 #music_row1 {
 	float:left;
 }
@@ -86,7 +90,7 @@ nav a:hover {
 
 #synopsis {
 	float: left;
-	background-color: #59F200;
+	background-color: #C92422;
 	width: 40%;
 }
 #epk {
@@ -97,7 +101,7 @@ nav a:hover {
 	width: 150px;
 }
 
-/*#cast_row1 {
+#cast_row1 {
 	float:left;
 	background-color: grey;
 }
@@ -108,7 +112,7 @@ nav a:hover {
 #cast_row3 {
 	float: left;
 	background-color: grey;
-}*/
+}
 .sectionhead {
 	text-decoration: uppercase;
 }
@@ -131,32 +135,32 @@ img {
 	font-weight: bold;
 }
 form {
-	padding-bottom: 20px;
-}
-
-/*#form {
 	float: right;
-	background-color: #00CCF0
-}*/
-
-
+	padding: 20px 5px;
+	border: 1px black solid;
+	background-color: #FFF;
+	width: 50%;
+}
 footer {
-	background-color: #FF957E;
+	background-color:grey;
 	border: 1px black solid;
 	padding: 20px;
 }
+#footer_right {
+	float: left;
+}
 #cast {
-	background-color: #E8C66A;
+	background-color: #FFF;
 	border: 1px black solid;
 	padding: 20px;
 }
 #music {
-	background-color: #FFC675;
+	background-color: #FFF;
 	border: 1px black solid;
 	padding: 20px;
 }
 #show {
-	background-color: #E8C66A;
+	background-color: #FFF;
 	border: 1px black solid;
 	padding: 20px;
 }
