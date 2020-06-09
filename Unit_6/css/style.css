@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&family=Proza+Libre:wght@700&display=swap');
+
+body {
+	font-family: "Noto Serif", perpetua, Serif;
+	font-size: 16px;
+	text-align: center;
+	margin: 40px;
+	width: 1080px;
+}
+header {
+	background-color: #000;
+	padding: 1em 0;
+}
+h1 {
+	text-decoration: none;
+	text-align: left;
+	font-family: "Proza Libre", sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	letter-spacing: .1em; 
+	color: #D4AF37;
+	padding-left: .5em;
+}
+h2, h3 {
+	font-family: "oswald", helvetica, sans-serif;
+}
+p {
+	font-family: "Noto Serif", perpetua, Serif;
+}
+nav {
+/*	text-align: right;*/
+	font-family: "oswald", helvetica, sans-serif;
+	text-decoration: none;
+	float: right;
+	background-color: #E8C66A
+	border: 1px black solid;
+	padding: 20px;
+}
+nav a:link {
+  color: #FF0000;
+}
+nav a:visited {
+  color: #00FF00;
+}
+nav a:hover {
+	background-color: #F00201;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#navlinks {
+/*	padding: .5em;*/
+	color: #FFF;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#cta {
+	float: right;
+	padding: .5em;
+	font-family: "oswald", helvetica, sans-serif;
+	font-size: 2em;
+	border: 5px solid;
+	border-color: #D4AF37;
+}
+/*#show {
+	background-color: E89C6C;
+}*/
+
+#music_row1 {
+	float:left;
+}
+#music_row2 {
+	float:left;
+}
+#music img {
+	width: 250px;
+}
+
+#synopsis {
+	float: left;
+	background-color: #59F200;
+	width: 40%;
+}
+#epk {
+	float: right;
+}
+
+#cast img {
+	width: 150px;
+}
+
+/*#cast_row1 {
+	float:left;
+	background-color: grey;
+}
+#cast_row2 {
+	float:left;
+}
+
+#cast_row3 {
+	float: left;
+	background-color: grey;
+}*/
+.sectionhead {
+	text-decoration: uppercase;
+}
+a {
+	padding: 1.5em
+}
+img {
+	width: 20%;
+}
+.socialtiles {
+	width: 200px;
+}
+
+#hero {
+	width: 100%;
+}
+
+.star {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+form {
+	padding-bottom: 20px;
+}
+
+/*#form {
+	float: right;
+	background-color: #00CCF0
+}*/
+
+
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+#cast {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+#music {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 20px;
+}
+#show {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+address {
+	background-color: #00CCF0;
+	border: 1px black solid;
+	padding: 20px;
+}
+#tickets {
+	/*float:left;*/
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+#tickets iframe {
+	width: 300px;
+	float: right;
+}
+/*aside {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+/*	width: 20%;
+}*/*/
+
+#left {
+	display: block;
+	background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 300px;
+}
+#right {
+	background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 300px;
+}
