@@ -6,7 +6,7 @@ body {
 }
 header {
 	background-color: #000;
-	margin: 1em 0;
+	padding: 1em 0;
 }
 h1 {
 	font-family: "Proza Libre", sans-serif;
@@ -19,7 +19,7 @@ h1 {
 }
 h2, h3 {
 	font-family: "Oswald", helvetica, sans-serif;
-	margin: 1em;
+	padding: 1em;
 }
 nav {
 	font-family: "Oswald", helvetica, sans-serif;
@@ -98,28 +98,32 @@ nav a:hover {
 	width: 20%;
 	border-radius: 50%;
 	float: left;
-	margin: 1em;
+	margin: auto;
 }
-
-/*#cast_row1 p {
-	float: none;
-}*/
-
-#cast_row1 img {
-	width: 80%;
-	margin: 1em;
-}
-
-/*#cast_row2 {
-	float:left;
-}*/
-#lead {
+.lead {
 	background-color: white;
 	border: 1px solid #999;
 	display: inline-block;
 	width: 45%;
 	margin: 1em;
 	float: left;
+}
+#cast_row1 img {
+	width: 80%;
+	margin: 1em;
+}
+.lead2 {
+	background-color: blue;
+	border: 1px solid #999;
+	display: inline-block;
+	width: 20%;
+	margin: 1em;
+	float: left;
+}
+
+#cast_row2 img {
+	width: 80%;
+	margin: 1em;
 }
 
 .sectionhead {
