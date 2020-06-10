@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 	<title>Quarantine: A Musical</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/stylev2.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
 	<header class="clearfix">
 		<h1>Quarantine: A Musical</h1>
-		<a href="#" id="cta">book tickets</a>	
 		<nav>
-			<a href="#music" id="navlinks">the music</a>
-			<a href="#show" id="navlinks">the show</a>
-			<a href="#cast" id="navlinks">cast/creative</a>
-			<a href="#tickets" id="navlinks">ticket info</a>
-			<a href="#contact" id="navlinks">contact</a>
+			<a href="#music" class="navlinks">the music</a>
+			<a href="#show" class="navlinks">the show</a>
+			<a href="#cast" class="navlinks">cast/creative</a>
+			<a href="#tickets" class="navlinks">ticket info</a>
+			<a href="#contact" class="navlinks">contact</a>
+			<a href="#" class="cta">book tickets</a>
 		</nav>
 	</header>
 	<section>
@@ -29,8 +29,6 @@
 			<img src="images/dearevanhandsanatizer.jpg" alt="title image of Dear Evan Handsanatizer The Musical" title="Dear Evan Handsanatizer The Musical">
 			<img src="images/sundayintheparkalone.jpg" alt="title image of Sunday In The Park Alone" title="Sunday In The Park Alone">
 			<img src="images/thephantomoftheoffice.jpg" alt="title image of The Phantom Of The Office" title="The Phantom Of The Office">
-		</div>
-		<div id="music_row2">
 			<img src="images/freezerent.jpg" alt="title image of Freeze Rent The Musical" title="Freeze Rent The Musical">
 			<img src="images/oneonthisisland.jpg" alt="title image of One On This Island" title="One On This Island">
 			<img src="images/iammiserable.jpg" alt="title image of I Am Miserable The Musical" title="I Am Miserable The Musical">
@@ -42,25 +40,31 @@
 		<p class="headline"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 		<div id="synopsis">
 			<h3> Finally something to get excited about in iso!</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
 		</div>
-		<div id="epk">
+		<div class="epk">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/0kIhBgQAw3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
 		</div>
 	</section>
 	<section id="cast" class="clearfix">
 		<h2 class="sectionhead">CAST | CREATIVE</h2>	
-		<article class="clearfix" id="cast_row1">
-			<div>	
-				<img src="images/beyonce.jpg" alt="Headshot image of Beyonce" title="Beyonce - Quarantina"> 
+		<div class="clearfix" id="cast_row1">
+			<div id="lead">	
+				<img src="images/beyonce.jpg" alt="Headshot image of Beyonce" title="Beyonce - Quarantina">
 				<p><span class="star">Beyonce</span> - Quarantina</p>
 			</div>
-			<div>
+			<div id="lead">
 				<img src="images/jay-z.jpg" alt="Headshot image of Jay-Z" title="Jay-Z - Mine Sharona">
 				<p><span class="star">Jay-Z</span> - Mine Sharona</p>
 			</div>
-		</article>
-		<article id="cast_row2" class="clearfix">
+		</div>
+		<div id="cast_row2" class="clearfix">
 			<div>
 					<img src="images/ladygaga.jpg" alt="Headshot image of Lady Gaga" title="Lagy Gaga - Rona">
 					<p><span class="star">Lagy Gaga</span> - Rona</p>
@@ -77,8 +81,6 @@
 					<img src="images/joshpiterman.jpg" alt="Headshot image of Josh Piterman" title="Josh Piterman - Jamie Wellerstein">
 					<p><span class="star">Josh Piterman</span> - Jamie Wellerstein</p>
 			</div>
-		</article>
-		<article id="cast_row3" class="clearfix">
 			<div>
 					<img src="images/hughjackman.jpg" alt="Headshot image of Hugh Jackman" title="Hugh Jackman - Mr. Showman">
 					<p><span class="star">Hugh Jackman</span> - Mr. Showman</p>
@@ -95,7 +97,7 @@
 					<img src="images/kristenwiig.jpg" alt="Headshot image of Kristen Wiig" title="Kristen Wiig - Jacinda Adern">
 					<p><span class="star">Kristen Wiig</span> - Jacinda Ardern</p>
 			</div>
-		</article>
+		</div>
 	</section>
 	<section id="tickets" class="clearfix">
 		<h2 class="sectionhead">TICKETS | INFO</h2>		
