@@ -31,6 +31,7 @@ nav {
 }
 nav a {
   color: #FFF;
+  font-size: 1.5em;
   text-decoration: none;
   padding: 1em;
   display: inline-block;
@@ -41,19 +42,34 @@ nav a:visited {
 nav a:hover {
 	background-color: #C92422;
 }
-.navlinks {
+/*.navlinks {
 	color: #FFF;
-	font-size: 1.5em;
 	text-decoration: none;
-}
+}*/
 .cta {
 	padding: .5em;
 	font-family: "oswald", helvetica, sans-serif;
 	font-size: 2em;
-	border: 5px solid;
+	border: .15em solid;
 	border-color: #D4AF37;
 	background-color: #C92422;
+	text-align: center;
 }
+#toggle {
+	display: none;
+}
+label {
+	color: #FFF;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 1em;
+	font-family: "Oswald", helvetica, sans-serif;
+	float: none;
+	border: 1px black solid;
+	padding: .5em;
+	display: none;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -76,7 +92,7 @@ nav a:hover {
     padding-top: .5em;
     width: 80%;
     margin: 1em auto;
-    border: 5px solid;
+    border: .15em solid;
 	border-color: #D4AF37;
 	font-size: 2em;
 }
@@ -100,18 +116,11 @@ img {
 	padding: .25em;
 	min-width: 15em;
 }
+
 #show {
 	background-color: #C92422;
-/*	border: 1px black solid;*/
 	padding: 3em;
 	color: #fff;
-}
-#synopsis {
-	float: left;
-	background-color: #C92422;
-	width: 48%;
-	margin-right: 2%;
-	padding: .2em 0;
 }
 .epk {
 	width: 100%;
@@ -128,9 +137,18 @@ img {
 	height: 100%;
 }
 .iContainer {
-	width: 50%;
+	width: 45%;
+	margin-right: 5%;
 	float: left;
 }
+#synopsis {
+	float: left;
+	background-color: #C92422;
+	width: 48%;
+	margin-right: 2%;
+	padding: .2em 0;
+}
+
 
 #cast {
 	background-color: #FFF;
@@ -179,8 +197,6 @@ img {
 }
 #tksleft {
 	display: block;
-/*	background-color: violet;
-    border: 1px black solid;*/
     padding: 20px;
     float: left;
     width: 33%;
@@ -199,7 +215,7 @@ img {
 #form {
 	float: left;
 	padding: 2em;
-	border: 5px solid;
+	border: .15em solid;
 	border-color: #D4AF37;
 	background-color: #C92422;
 	color: #FFF;
@@ -207,7 +223,6 @@ img {
 }
 #form p {
 	font-size: 1.5em;
-	padding-bottom: 5px;
 	font-weight: bold;
 }
 form {
@@ -217,16 +232,14 @@ footer {
 	padding: 3em;
 }
 #footerleft {
-/*	display: inline;
-	font-size: 1.1em;
-	font-weight: bold;*/
 	width: 50%;
 	float: left;
 }
-label {
+form label {
 	display: block;
 	margin: .5em 0;
 }
+
 input#submit {
 	text-align: center;
 	font-size: 1em;
@@ -236,3 +249,79 @@ input#submit {
     margin: 1em 0;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1090px){
+	#music img {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 945px){
+	#music img {
+		width: 48%;
+	}
+	.iContainer {
+	width: 85%;
+	float: none;
+	}
+	#synopsis {
+		float: none;
+		width: 85%;
+		padding: 1.2em 0;
+	}
+	nav {
+		float: none;
+		display: block;
+	}
+	.cta {
+		display: block;
+	}
+	.lead2 {
+		min-height: 18em;
+	}
+}
+@media screen and (max-width: 730px){
+	body{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 640px){
+	nav a {
+		display: none;
+	}
+	label {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	/*#toggle:checked + nav a {
+		display: inline-block;
+	}*/
+	h1 {
+		text-align: center;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 600px){
+	#music img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 525px){
+	#music {
+		padding: 1em;
+	}
+	#show {
+		padding: 1em;
+	}
+	#cast {
+		padding: 1em;
+	}
+	#tickets {
+		padding: 1em;
+	}
+}
+@media screen and (max-width: 375px){
+	h1 {
+		font-size: 3em;
+	}
