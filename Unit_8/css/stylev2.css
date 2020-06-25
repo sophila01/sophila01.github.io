@@ -55,19 +55,25 @@ nav a:hover {
 	background-color: #C92422;
 	text-align: center;
 }
-#toggle {
-	display: none;
+.overlay {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10em;
+  width: 80%;
+  background: gray;
+  opacity: 90%;
 }
-label {
-	color: #FFF;
-	font-size: 2em;
-	text-decoration: none;
-	padding: 1em;
-	font-family: "Oswald", helvetica, sans-serif;
-	float: none;
-	border: 1px black solid;
-	padding: .5em;
+.menuButton {
 	display: none;
+	font-family: "Oswald", helvetica, sans-serif;
+	color: #FFF;
+	font-size: 2.2em;
+	text-decoration: none;
+	padding: .5em;
+	text-align: center;
 }
 
 .clearfix:after {
@@ -108,13 +114,13 @@ img {
 /*	border: 1px black solid;*/
 	padding: 3em;
 }
-#music_row1 {
+/*#music_row1 {
 	float:left;
-}
+}*/
 #music img {
-	width: 24%;
+	width: 25%;
 	padding: .25em;
-	min-width: 15em;
+	float: left;
 }
 
 #show {
@@ -144,8 +150,7 @@ img {
 #synopsis {
 	float: left;
 	background-color: #C92422;
-	width: 48%;
-	margin-right: 2%;
+	width: 50%;
 	padding: .2em 0;
 }
 
@@ -164,11 +169,11 @@ img {
 .lead {
 	background-color: white;
 	display: inline-block;
-	width: 45%;
-	margin: 1em;
+	width: 50%;
+	padding: 2em;
 	float: left;
 	text-align: center;
-	min-width: 10em;
+/*	min-width: 366px;*/
 }
 .lead2 {
 	display: inline-block;
@@ -176,7 +181,7 @@ img {
 	float: left;
 	text-align: center;
 	min-height: 25em;
-	min-width: 10em;
+/*	min-width: 10em;*/
 }
 .star {
 	font-size: 1.5em;
@@ -188,7 +193,7 @@ img {
 	padding: 3em;
 }
 #tickets iframe {
-	width: 30%;
+	width: 37%;
 	float: right;
 }
 #tickets img {
@@ -197,23 +202,22 @@ img {
 }
 #tksleft {
 	display: block;
-    padding: 20px;
+    padding: 1em;
     float: left;
-    width: 33%;
-    margin-right: 2%; 
+    width: 40%;
 }
 #tksright {
-    padding: 20px;
+    padding: 1em;
     float: left;   
-    width: 33%;
-    margin-right: 2%;
+    width: 23%;
 }
 .socialtiles {
-	width: 25%;
+	min-width: 6em;
+    max-width: 10em;
 	margin: 1em;
 }
 #form {
-	float: left;
+	float: right;
 	padding: 2em;
 	border: .15em solid;
 	border-color: #D4AF37;
@@ -233,7 +237,6 @@ footer {
 }
 #footerleft {
 	width: 50%;
-	float: left;
 }
 form label {
 	display: block;
@@ -254,19 +257,26 @@ input#submit {
 	#music img {
 		width: 33%;
 	}
+	#tickets iframe {
+		width: 60%;
+		float: none;
+		height: auto;
+	}
+	#tksright {
+	    float: left;   
+	    width: 60%;
+	}
 }
 
 @media screen and (max-width: 945px){
 	#music img {
-		width: 48%;
+		width: 50%;
 	}
 	.iContainer {
-	width: 85%;
-	float: none;
+	width: 100%;
 	}
 	#synopsis {
-		float: none;
-		width: 85%;
+		width: 100%;
 		padding: 1.2em 0;
 	}
 	nav {
@@ -284,22 +294,35 @@ input#submit {
 	body{
 		font-size: 14px;
 	}
+	#form {
+		float: none;
+		width: 100%;
+	}
+	#footerleft {
+		width: 100%;
+		padding: 1em;
+	}
 }
 @media screen and (max-width: 640px){
-	nav a {
-		display: none;
-	}
-	label {
-		display: inline-block;
-		width: 100%;
-		text-align: center;
-	}
-	/*#toggle:checked + nav a {
-		display: inline-block;
-	}*/
 	h1 {
 		text-align: center;
 		margin: 0;
+	}
+	.menuButton {
+		display: block;
+	}
+	nav a {
+		display: none;
+	}
+	.cta {
+		display: block;
+	}
+	.lead2 {
+		min-height: 18em;
+		width: 33.3%;
+	}
+	.lead {
+		padding: 0;
 	}
 }
 @media screen and (max-width: 600px){
@@ -322,6 +345,31 @@ input#submit {
 	}
 }
 @media screen and (max-width: 375px){
+	body{
+		font-size: 13px;
+	}
 	h1 {
 		font-size: 3em;
 	}
+	#herotag {
+		font-size: 1.5em;
+	}
+	.lead2 {
+		width: 50%;
+		min-height: 17em;
+	}
+	.lead {
+		min-height: 17em;
+	}
+}
+@media screen and (max-width: 290px){
+	#herotag {
+		font-size: 1.3em;
+	}
+	.lead2 {
+		width: 100%;
+	}
+	.lead {
+		width: 100%;
+	}
+}
