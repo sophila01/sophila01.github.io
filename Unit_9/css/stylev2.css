@@ -313,7 +313,7 @@ input#submit {
 		display: block;
 	}
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 653px){
 	h1 {
 		text-align: center;
 		margin: 0;
