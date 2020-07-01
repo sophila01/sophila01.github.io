@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".menuButton").click(function() {
+    $(".menu").click(function() {
         $(".overlay").toggle();
 	});
 });
